@@ -23,7 +23,7 @@ services:
       DB_PASSWORD: root
       APP_DEBUG: 'true'
       APP_ENV: local
-      APP_URL: http://localhost:8000
+      APP_URL: http://localhost:80
       APP_KEY: base64:3D7jAxA4Ki5VF3+jNTa1BZ45JS1Pfb0eikO9kUZC9oA=
       MAIL_HOST: mailcatcher
       MAIL_PORT: 1025
