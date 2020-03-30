@@ -21,6 +21,7 @@ install: up ## Install project
 	docker-compose exec web yarn production
 	docker-compose exec web php artisan migrate
 	docker-compose exec web php artisan db:seed
+	docker-compose exec web php artisan dusk:install
 
 .PHONY: up
 up: ## Start containers
@@ -34,3 +35,7 @@ stop: ## Stop containers
 restart: ## Restart containers
 	docker-compose stop
 	docker-compose up -d
+
+.PHONY: tests
+tests: ## Launch browser tests
+	docker-compose exec web php artisan dusk
