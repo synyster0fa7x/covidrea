@@ -61,3 +61,8 @@ services:
       MYSQL_DATABASE: covidrea
     volumes: 
       - mysql-data:/var/lib/mysql
+
+  selenium:
+    image: selenium/standalone-chrome
+    links:
+      - web
