@@ -34,8 +34,6 @@ class HomePageButtonsTest extends DuskTestCase
                 ->assertRouteIs('login')
             ;
 
-
-
         });
     }
 }
