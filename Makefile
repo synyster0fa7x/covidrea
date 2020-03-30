@@ -38,4 +38,6 @@ restart: ## Restart containers
 
 .PHONY: tests
 tests: ## Launch browser tests
+	# docker-compose exec web php artisan migrate:fresh
+	# docker-compose exec web php artisan db:seed
 	docker-compose exec web php artisan dusk
